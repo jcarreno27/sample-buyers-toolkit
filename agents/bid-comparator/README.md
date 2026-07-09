@@ -17,7 +17,9 @@ frames the award decision; it never makes it.
    "are these prices even comparable?" analysis, a risk read per bid, and
    pre-award questions for each supplier.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/bid-comparator`
 
 ## Files

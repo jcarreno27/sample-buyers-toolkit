@@ -13,7 +13,9 @@ answers the same numbered items and the bids come back comparable.
    [input template](input-template.md) covers the logistics.
 3. You get four ready-to-paste emails and a before-you-send checklist.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/rfp-drafter`
 
 ## Files

@@ -42,7 +42,9 @@ Paste the prompt as the first message, or as the system prompt if the tool
 exposes one. The prompts assume nothing tool-specific.
 
 ### Claude Code (optional, for those who use it)
-Each agent ships a skill version:
+Each agent ships a skill version. First download the repo (Download ZIP or
+`git clone`) — the command below copies the skill from those local files;
+it doesn't fetch anything from GitHub. From the repo's root folder, run:
 
 ```
 cp -r agents/<agent-name>/claude-code-skill ~/.claude/skills/<agent-name>
@@ -52,6 +54,13 @@ e.g. `cp -r agents/brief-builder/claude-code-skill ~/.claude/skills/brief-builde
 Then just describe the task in Claude Code ("compare these three bids") —
 the skill activates. Bonus: skills can read files in your working folder,
 so you can point them at saved RFP replies instead of pasting.
+
+Installing several agents doesn't wire them together — there's no automatic
+pipeline. Each agent still takes whatever you give it as input. What one
+Claude Code conversation *does* give you is continuity: ask it to "build a
+brief, then feasibility-check it" and the brief it just made is right there
+for the next step — because the conversation carries the context, not
+because the skills hand off to each other.
 
 ## Step 3 — Use it
 

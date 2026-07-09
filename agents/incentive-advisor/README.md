@@ -22,7 +22,9 @@ would need to receive.
    you can challenge it, and the supplier questions that keep the
    incentive honest.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/incentive-advisor`
 
 ## Files

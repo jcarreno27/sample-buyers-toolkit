@@ -17,7 +17,9 @@ with certainty.
    overall risk rating, a dimension-by-dimension risk table, mitigations,
    and questions to put to suppliers.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/feasibility-checker`
 
 ## Files

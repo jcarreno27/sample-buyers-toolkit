@@ -17,7 +17,9 @@ ask your supplier / watch**. Catches field trouble while it's still cheap.
    three-bucket action sort with supplier questions that have numbers in
    them.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/fielding-risk-advisor`
 
 ## Files

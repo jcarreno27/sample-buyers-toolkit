@@ -14,7 +14,9 @@ supplier-ready sample brief, with every gap and assumption made visible.
    structured brief plus a list of gaps, contradictions, and decisions to
    make before it goes to suppliers.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/brief-builder`
 
 ## Files

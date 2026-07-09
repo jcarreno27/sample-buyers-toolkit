@@ -15,7 +15,9 @@ fielding risk only — it does not judge your methodology.
    directions, an LOI reality check, and the list of things to tell your
    supplier before launch.
 
-**Claude Code users:** copy the skill folder instead —
+**Optional — only if you use Claude Code** and would prefer to install
+this agent as an auto-activating skill. Once you've downloaded the repo,
+run this from the agent's folder:
 `cp -r claude-code-skill ~/.claude/skills/questionnaire-risk-reviewer`
 
 ## Files
