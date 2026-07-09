@@ -160,6 +160,31 @@ incentive   ≈ time value × access premium × scarcity adjustments
   more. Expect the delta in CPI, and push back if a supplier frames it as
   incentive.
 
+**Consumer incentives are a different regime.** The math above is
+salary-anchored B2B; consumer incentives track survey burden, not salary,
+and run far lower. Sourcing is the first fork. On a habitual
+general-population panel (the usual case when you buy panel sample) the
+panel sets and delivers the incentive itself, typically points or a small
+gift card worth roughly $0.50-$5 for a short survey; that is what a panel
+RFP comes back near. Directly recruited or hard-to-reach consumers run
+higher, on published recruited-research ranges: about $5-15 for a 10-minute
+survey, $25-50 for 20-30 minutes, $75-150 for an hour. Returns flatten well
+before the top of those ranges (Singer and Ye 2013; Mercer 2015), so the
+higher bands are burden-driven, not a lever for a short survey. Gift cards
+are the usual form. Low incidence (rare conditions, diagnosed patients)
+raises CPI, not the per-person incentive: hold the normal length-based rate
+and let the scarcity land in CPI. Patients in commercial research price as
+consumers; regulated or clinical studies are bounded by IRB
+undue-inducement review instead.
+
+**HCP honoraria are a third regime again:** fair-market-value disciplined,
+anchored to specialty hourly rates prorated by length, and capped by the
+sponsor. Blinded market research (the sponsor never learns who answered) is
+generally excluded from US Open Payments (Sunshine Act) reporting; that
+attaches mainly to unblinded or advisory work. Treat the HCP number as a
+compliance decision, not a pricing one, and get the rate and the
+reportability call from the compliance team.
+
 ## 8. Seniority-fraud patterns (who's really in the panel?)
 
 - Genuine C-suite executives of 50+ employee companies rarely sit in

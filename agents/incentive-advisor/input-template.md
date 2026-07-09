@@ -7,8 +7,11 @@ the rest sharpens it.
 INCENTIVE REQUEST
 
 --- AUDIENCE ---
-Who (seniority + function, plain English):
-Audience type: [B2B corporate / owner-founder-SBO / consumer / HCP]
+Audience type (this selects the model): [consumer / B2B corporate /
+  owner-founder-SBO / healthcare professional (HCP) / patient]
+  (patients price as consumers unless it is regulated/clinical research;
+   a clinician answering in a professional capacity is HCP, not B2B)
+Who (plain English; for B2B, seniority + function):
 Industry / vertical:
 Company size (if B2B):
 Market: [US-calibrated; elsewhere = direction only]

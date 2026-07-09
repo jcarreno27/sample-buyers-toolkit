@@ -32,11 +32,13 @@ scope for the whole kit.
 
 ## What to paste in
 
-Audience (seniority, function/department, industry, company size if B2B),
-sourcing method (panel / active recruitment / expert network / marketplace),
-LOI, any stacked targeting qualifiers (named companies, specific behavior,
+**Audience type first** (consumer / B2B / healthcare professional (HCP) /
+patient), which selects the pricing model. Then audience detail (for B2B:
+seniority, function/department, industry, company size), sourcing method
+(panel / active recruitment / expert network / marketplace), LOI, any
+stacked targeting qualifiers (named companies, specific behavior,
 certifications, revenue thresholds), quota cells, and market.
-**Required:** audience, sourcing method, LOI.
+**Required:** audience type, audience detail, sourcing method, LOI.
 **Optional but valuable:** the incentive a supplier proposed (for a
 sanity-check read), your own past incentives that worked, budget pressure
 level (no numbers needed).
@@ -44,9 +46,10 @@ level (no numbers needed).
 ## What it returns
 
 1. **The anchor** — time-value arithmetic, shown as arithmetic
-2. **A recommended range** with three tiers — Standard / Compressed
-   (tight timeline or niche vertical) / Premium (named companies,
-   credentialed, verification-heavy) — and what places a project in each
+2. **A recommended range** with tiers suited to the regime (B2B: Standard
+   / Compressed / Premium; consumer: gen-pop panel vs. directly recruited),
+   and what places a project in each. HCP gets a fair-market-value anchor
+   structure, not a dollar figure.
 3. **Adjustments applied** — sourcing premium, function scarcity, stacked-
    qualifier loading, floors — each named so it can be challenged
 4. **Cautions** — where the low end underperforms, the hardest-cell rule,
@@ -83,18 +86,29 @@ level (no numbers needed).
 
 ## Calibration honesty
 
-The model behind this agent was built from B2B fieldwork (heavily senior
-and financial-services audiences, US market). For consumer audiences the
-*logic* holds but the anchors change completely — consumer incentives are
-effort- and burden-anchored, not salary-anchored, and run far lower. For
-healthcare professionals, honoraria run far higher and carry fair-market-
-value and compliance constraints (e.g., transparency/sunshine rules) that
-are a compliance question before they're a pricing question. The agent says
-which regime it's reasoning in and how much to trust the numbers there.
+The agent asks the audience type first and prices three regimes
+differently. **B2B** uses the opportunity-cost model above and is the most
+calibrated (US fieldwork, heavily senior and financial-services).
+**Consumer** is effort- and length-anchored, not salary-anchored, and runs
+far lower. The first fork is sourcing: a habitual general-population panel
+(the usual case when you buy panel sample) sets a low figure itself,
+typically points or a small gift card worth roughly $0.50 to $5 for a short
+survey; directly recruited or hard-to-reach consumers run higher, on
+published ranges of about $5-15 for 10 minutes up to $75-150 for an hour,
+where returns flatten well before the top. Patients in commercial research
+price as consumers; regulated or clinical studies are bounded by IRB
+undue-inducement review instead. **HCP** honoraria are fair-market-value
+disciplined, anchored to specialty hourly rates prorated by length and
+capped by the sponsor; the agent gives that structure but no dollar figure,
+and defers the rate and the reporting call to the user's compliance source.
+(Blinded market research is generally excluded from US Open Payments
+reporting; that attaches mainly to unblinded or advisory work.) It always
+says which regime it is in and how calibrated the numbers are.
 
 ## Clarifying questions it will typically ask
 
-- What sourcing method — panel, active recruitment, expert network, marketplace?
+- Is this a consumer, B2B, or HCP audience? (Patients price as consumers unless it is a regulated/clinical study.) This selects the whole model.
+- What sourcing method: panel, active recruitment, expert network, marketplace?
 - Is this a corporate title or an owner/founder audience?
 - How many targeting qualifiers stack on top of the role (named companies, behavior, certifications, revenue)?
 - Which quota cell will be hardest to fill?
@@ -124,10 +138,11 @@ never estimates, implies, or back-calculates.
 
 - What the project will cost, or what CPI the incentive implies
 - That any incentive level guarantees a response rate or field pace
-- That its B2B-calibrated anchors transfer literally to consumer or HCP
-  audiences (it flags the regime change instead)
-- HCP honoraria compliance — it flags fair-market-value constraints; it
-  doesn't certify them
+- That its consumer ranges are guarantees rather than published starting
+  points to adjust with the user's own panel norms
+- A specific HCP honorarium figure, or that any honorarium is compliant:
+  it gives the fair-market-value anchor structure and defers the rate, the
+  cap, and the reportability call to the user's compliance source
 
 ## When not to use it
 
@@ -148,8 +163,10 @@ as a mid-field rescue.
 
 ## Example
 
-See [example.md](example.md) — the B2B ITDM study, plus the agent honestly
-declining to salary-anchor a consumer audience.
+See [example.md](example.md): one run per regime — a B2B study priced by
+the opportunity-cost model, a consumer study priced with length-based
+ranges, and an HCP study where the agent gives the fair-market-value
+structure but withholds the number.
 
 ## Copy/paste prompt
 
